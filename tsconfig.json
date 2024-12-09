@@ -6,10 +6,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "./src",
+     "baseUrl": ".",
     "paths": {
-      "@routes/*": ["src/routes/*"]
+      "@config/*": ["src/config/*"],  
+      "@routes/*": ["src/routes/*"],
+      "@middleware/*": ["src/middleware/*"]
     },
+  
     "outDir": "./dist"
   },
   "include": ["src/**/*.ts"],

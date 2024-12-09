@@ -1,8 +1,9 @@
-import { authUser, getUserProfile, logoutUser, registerUser, updateUserProfile } from "controllers/user-controller";
-import express from "express";
-import { protect } from "middleware/auth-middleware";
+import { protect } from "../middleware/auth-middleware";
 
-import { upload } from "uploads/image";
+import express from "express";
+import { authUser, getUserProfile, logoutUser, registerUser, updateUserProfile } from "../controllers/user-controller";
+import { upload } from "../uploads/image";
+
 
 
 

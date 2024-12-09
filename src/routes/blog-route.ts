@@ -7,7 +7,8 @@ import {
   removeBlog,
   updateBlog,
 } from "../controllers/blog-controller";
-import { protect } from "middleware/auth-middleware";
+import { protect } from "../middleware/auth-middleware";
+
 
 
 

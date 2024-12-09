@@ -2,11 +2,11 @@ const express = require("express");
 const cors = require("cors");
 import cookieParser from "cookie-parser";
 
-import connectdb from "./config/db";
-import userRouter from "./routes/user-route";
-import blogRouter from "./routes/blog-route";
+import connectdb from "./src/config/db";
+import userRouter from "./src/routes/user-route";
+import blogRouter from "./src/routes/blog-route";
 import { NextFunction, Request, Response } from "express";
-import { errorHandler, notFound } from "./middleware/error-middleware";
+import { errorHandler, notFound } from "./src/middleware/error-middleware";
 
 import dotenv from "dotenv";
 import path from "path";
@@ -15,7 +15,7 @@ import path from "path";
 
 dotenv.config();
 
-connectdb();
+connectdb()
 
 const app = express();
 
